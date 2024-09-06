@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-from schemas.dependencias import DependenciaReadMany
+from schemas.dependencia import DependenciaReadMany
 
 class UnidadeConsumidoraCreate(BaseModel):
     nome: str

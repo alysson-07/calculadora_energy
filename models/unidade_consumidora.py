@@ -7,7 +7,6 @@ class UnidadeConsumidoraDB(Model):
     nome = CharField(column_name='unidade_consumidora_nome')
 
     tipo = ForeignKeyField(
-        column_name='unidade_consumidora_tipo_id',
         model=TipoConsumidorDB,
         backref='unidades_consumidoras'
     )
